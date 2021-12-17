@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet" />
+    <title>ChessVisualTrainer</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__score">Score</div>
+      <div class="header__menu">Menu</div>
+    </header>
+    <main class="main">
+      <div class="main__pieces-amount">
+        Pieces on board: <span id="pieces-amount-current"></span> of
+        <span id="pieces-amount-total"></span>
+      </div>
+      <div class="main__game-field">
+        <button class="main__game-field_button left-button" id="piece-left">
+          <
+        </button>
+        <div class="main__game-field_piece-position">
+          <div class="main__game-field_piece-position-item" id="piece"></div>
+          <div
+            class="main__game-field_piece-position-letter"
+            id="piece-position"
+          ></div>
+        </div>
+        <button class="main__game-field_button right-button" id="piece-right">
+          >
+        </button>
+      </div>
+      <div class="main__voice">
+        <button>Listen</button>
+      </div>
+      <div class="main__whose-move">White's move</div>
+      <div class="main__theme">Mate in one</div>
+      <div class="main__choose-puzzle">
+        <button class="main__choose-puzzle_button left-button" id="puzzle-left">
+          <
+        </button>
+        <div class="main__choose-puzzle_current">
+          <span
+            class="main__choose-puzzle_current-number"
+            id="puzzles-current-number"
+          ></span>
+          of
+          <span
+            class="main__choose-puzzle_current-total-number"
+            id="puzzles-total-number"
+          ></span>
+          <button
+            class="main__choose-puzzle_button right-button"
+            id="puzzle-right"
+          >
+            >
+          </button>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__your-guess">
+        <form action="">
+          <input type="text" placeholder="Enter your guess" id="guess" />
+        </form>
+        <button id="submit-answer">Check</button>
+      </div>
+      <div class="footer__result" id="result"></div>
+    </footer>
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>

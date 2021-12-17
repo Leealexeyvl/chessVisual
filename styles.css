@@ -1,0 +1,77 @@
+@font-face {
+  font-family: "Arcade";
+  src: url("ARCADECLASSIC.TTF") format("woff2");
+}
+
+body {
+  font-family: "Arcade";
+  font-size: large;
+  color: #f22ebe;
+  /* background-image: url(./3ace587996ec87749c2a8549fd6d1254.jpeg); */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #1c0340;
+}
+
+button,
+input {
+  background-color: #342273;
+  color: #42c6ff;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  margin: 5px;
+  padding: 5px;
+  border: #42c6ff solid 1px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main__game-field {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.main__game-field_piece-position-item {
+  font-size: 100px;
+  color: #000;
+  background-color: #fff;
+}
+
+.main__game-field_piece-position-letter {
+  text-align: center;
+  font-size: 30px;
+  color: #f22ebe;
+}
+
+.header {
+  color: #f22ebe;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 5px;
+}
+
+.main__choose-puzzle {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer__your-guess {
+  display: flex;
+  justify-content: center;
+}
+.footer__result {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 60px;
+}
