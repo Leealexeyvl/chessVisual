@@ -72,6 +72,11 @@ input {
   display: flex;
   justify-content: center;
 }
+
+::placeholder {
+  color: #f22ebe9b;
+}
+
 .footer__result {
   margin-top: 50px;
   text-align: center;
