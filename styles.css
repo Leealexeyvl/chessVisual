@@ -39,8 +39,10 @@ input {
 
 .main__game-field_piece-position-item {
   font-size: 100px;
-  color: #000;
-  background-color: #fff;
+  /* color: #000; */
+  color: #f22ebe;
+  /* background-color: #fff; */
+  /* background-color: #9677d9; */
 }
 
 .main__game-field_piece-position-letter {
