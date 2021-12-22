@@ -29,6 +29,7 @@ input {
 .header {
   display: flex;
   justify-content: space-between;
+  color: #f22ebe;
 }
 
 .main__game-field {
@@ -51,10 +52,6 @@ input {
   color: #f22ebe;
 }
 
-.header {
-  color: #f22ebe;
-}
-
 .main {
   display: flex;
   flex-direction: column;
@@ -68,13 +65,18 @@ input {
   justify-content: space-around;
 }
 
+.footer {
+  display: flex;
+  justify-content: center;
+}
+
 .footer__your-guess {
   display: flex;
   justify-content: center;
 }
 
 ::placeholder {
-  color: #f22ebe9b;
+  color: #f22ebec4;
 }
 
 .footer__result {
