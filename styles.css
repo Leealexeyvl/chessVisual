@@ -25,6 +25,10 @@ input {
   border: #42c6ff solid 1px;
 }
 
+input {
+  width: 205px;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
