@@ -7,7 +7,6 @@ body {
   font-family: "Arcade";
   font-size: large;
   color: #f22ebe;
-  /* background-image: url(./3ace587996ec87749c2a8549fd6d1254.jpeg); */
   background-position: center center;
   background-repeat: no-repeat;
   background-color: #1c0340;
@@ -40,10 +39,7 @@ input {
 
 .main__game-field_piece-position-item {
   font-size: 100px;
-  /* color: #000; */
   color: #f22ebe;
-  /* background-color: #fff; */
-  /* background-color: #9677d9; */
 }
 
 .main__game-field_piece-position-letter {
@@ -67,11 +63,13 @@ input {
 
 .footer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
 .footer__your-guess {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
