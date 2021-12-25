@@ -1,3 +1,3 @@
 # chessvisual
 
-Publised https://leealexeyvl.github.io/chessVisual/
+Published https://leealexeyvl.github.io/chessVisual/
