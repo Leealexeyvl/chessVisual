@@ -1,16 +1,16 @@
-export const PIECES_UNICODE = {
-  k: "\u2654",
-  q: "\u2655",
-  r: "\u2656",
-  b: "\u2657",
-  n: "\u2658",
-  p: "\u2659",
-  K: "\u265A",
-  Q: "\u265B",
-  R: "\u265C",
-  B: "\u265D",
-  N: "\u265E",
-  P: "\u265F",
+export const PIECES_SRC = {
+  k: "./piecesPNG/bk.png",
+  q: "./piecesPNG/bq.png",
+  r: "./piecesPNG/br.png",
+  b: "./piecesPNG/bb.png",
+  n: "./piecesPNG/bn.png",
+  p: "./piecesPNG/bp.png",
+  K: "./piecesPNG/wk.png",
+  Q: "./piecesPNG/wq.png",
+  R: "./piecesPNG/wr.png",
+  B: "./piecesPNG/wb.png",
+  N: "./piecesPNG/wn.png",
+  P: "./piecesPNG/wp.png",
 };
 
 export const PUZZLES = [

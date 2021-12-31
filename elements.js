@@ -1,5 +1,6 @@
 // area with piece icon
-export const currentPieceCharacterOnBoard = document.getElementById("piece");
+export const currentPieceCharacterOnBoard =
+  document.getElementById("piece-image");
 export const previousPieceButton = document.getElementById("piece-left");
 export const nextPieceButton = document.getElementById("piece-right");
 export const currentPiecePositionOnBoard =

@@ -41,11 +41,6 @@ input {
   justify-content: space-around;
 }
 
-.main__game-field_piece-position-item {
-  font-size: 100px;
-  color: #f22ebe;
-}
-
 .main__game-field_piece-position-letter {
   text-align: center;
   font-size: 30px;
@@ -85,4 +80,14 @@ input {
   margin-top: 10px;
   text-align: center;
   font-size: 60px;
+}
+
+.png {
+  width: 100px;
+  height: 100px;
+}
+
+img {
+  width: 80px;
+  height: 80px;
 }

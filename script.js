@@ -1,4 +1,4 @@
-import { PUZZLES, PIECES_UNICODE, ANSWERS } from "./consts.js";
+import { PUZZLES, PIECES_SRC, ANSWERS } from "./consts.js";
 import * as elements from "./elements.js";
 
 // global variables
@@ -9,12 +9,21 @@ let totalPuzzlesInGame = PUZZLES.length;
 
 // init every value on page
 const initialAllValues = () => {
-  elements.currentPieceCharacterOnBoard.textContent =
-    PIECES_UNICODE[
+  // elements.currentPieceCharacterOnBoard.src =
+  //   PIECES_SRC[
+  //     PUZZLES[currentPuzzleNumberInArrayOfPuzzles][
+  //       currentPieceInArrayOfCurrentPuzzle
+  //     ][0]
+  //   ];
+  elements.currentPieceCharacterOnBoard.setAttribute(
+    "src",
+    PIECES_SRC[
       PUZZLES[currentPuzzleNumberInArrayOfPuzzles][
         currentPieceInArrayOfCurrentPuzzle
       ][0]
-    ];
+    ]
+  );
+  console.log(elements.currentPieceCharacterOnBoard);
   elements.currentPiecePositionOnBoard.textContent =
     PUZZLES[currentPuzzleNumberInArrayOfPuzzles][
       currentPieceInArrayOfCurrentPuzzle
