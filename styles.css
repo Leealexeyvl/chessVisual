@@ -39,11 +39,22 @@ input {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  width: 70vw;
+  height: 50vh;
+}
+
+.main__game-field_piece-position {
+  width: 100%;
+}
+
+.main__game-field_piece-position-item {
+  display: flex;
+  justify-content: center;
 }
 
 .main__game-field_piece-position-letter {
   text-align: center;
-  font-size: 30px;
+  font-size: 50px;
   color: #f22ebe;
 }
 
@@ -82,12 +93,7 @@ input {
   font-size: 60px;
 }
 
-.png {
-  width: 100px;
-  height: 100px;
-}
-
 img {
-  width: 80px;
-  height: 80px;
+  width: 150px;
+  height: 150px;
 }

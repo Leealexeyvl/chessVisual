@@ -64,7 +64,7 @@ elements.previousPieceButton.addEventListener("click", () => {
   initialAllValues();
 });
 
-// move forward through chess pieces for current puzzle
+// move forward through puzzles
 elements.nextPuzzleButton.addEventListener("click", () => {
   // piece character and position increment
   currentPuzzleNumberInArrayOfPuzzles++;
