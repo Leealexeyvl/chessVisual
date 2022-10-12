@@ -6,6 +6,7 @@ let currentPieceInArrayOfCurrentPuzzle = 0;
 let currentPuzzleNumberInArrayOfPuzzles = 0;
 let totalPiecesOnBoard = PUZZLES[currentPuzzleNumberInArrayOfPuzzles].length;
 let totalPuzzlesInGame = PUZZLES.length;
+let audioArr = [];
 
 // init every value on page
 const initialAllValues = () => {
@@ -17,6 +18,23 @@ const initialAllValues = () => {
       ][0]
     ]
   );
+  audioArr = [];
+  audioArr.push(
+    PUZZLES[currentPuzzleNumberInArrayOfPuzzles][
+      currentPieceInArrayOfCurrentPuzzle
+    ][0]
+  );
+  audioArr.push(
+    PUZZLES[currentPuzzleNumberInArrayOfPuzzles][
+      currentPieceInArrayOfCurrentPuzzle
+    ][1][0]
+  );
+  audioArr.push(
+    PUZZLES[currentPuzzleNumberInArrayOfPuzzles][
+      currentPieceInArrayOfCurrentPuzzle
+    ][1][1]
+  );
+  console.log(audioArr);
   console.log(elements.currentPieceCharacterOnBoard);
   elements.currentPiecePositionOnBoard.textContent =
     PUZZLES[currentPuzzleNumberInArrayOfPuzzles][
@@ -37,7 +55,6 @@ initialAllValues();
 // delete double click
 document.body.addEventListener("dblclick", (event) => {
   event.preventDefault();
-  console.log("Listen!");
 });
 
 // move forward through chess pieces in current puzzle
@@ -103,4 +120,26 @@ document.querySelector("#submit-answer").addEventListener("click", () => {
     elements.result.textContent = "Wrong!";
   }
   elements.guess.value = "";
+});
+
+// audio playing
+let pathAudio = ["q.m4a", "Letter d.m4a", "8.m4a"];
+let audio = new Audio();
+let soundNumber = 0;
+audio.src = pathAudio[soundNumber];
+
+audio.addEventListener("ended", () => {
+  console.log("End");
+  soundNumber++;
+  if (soundNumber >= pathAudio.length) {
+    soundNumber = 0;
+    return;
+  }
+  audio.src = pathAudio[soundNumber];
+  audio.play();
+});
+elements.listen.addEventListener("click", () => {
+  audio.src = pathAudio[soundNumber];
+  audio.play();
+  console.log("Start");
 });
