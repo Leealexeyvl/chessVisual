@@ -9,12 +9,6 @@ let totalPuzzlesInGame = PUZZLES.length;
 
 // init every value on page
 const initialAllValues = () => {
-  // elements.currentPieceCharacterOnBoard.src =
-  //   PIECES_SRC[
-  //     PUZZLES[currentPuzzleNumberInArrayOfPuzzles][
-  //       currentPieceInArrayOfCurrentPuzzle
-  //     ][0]
-  //   ];
   elements.currentPieceCharacterOnBoard.setAttribute(
     "src",
     PIECES_SRC[
