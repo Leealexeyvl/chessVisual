@@ -143,3 +143,8 @@ elements.listen.addEventListener("click", () => {
   audio.play();
   console.log("Start");
 });
+elements.listen.addEventListener("touchstart", () => {
+  audio.src = pathAudio[soundNumber];
+  audio.play();
+  console.log("Start");
+});
