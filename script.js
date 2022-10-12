@@ -34,6 +34,12 @@ const initialAllValues = () => {
 
 initialAllValues();
 
+// delete double click
+document.body.addEventListener("dblclick", (event) => {
+  event.preventDefault();
+  console.log("Listen!");
+});
+
 // move forward through chess pieces in current puzzle
 elements.nextPieceButton.addEventListener("click", () => {
   // piece icon and position increment

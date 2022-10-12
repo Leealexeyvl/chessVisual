@@ -29,3 +29,4 @@ export const result = document.querySelector("#result");
 export const guess = document.querySelector("#guess");
 
 // result
+export const listen = document.querySelector("#listen");
