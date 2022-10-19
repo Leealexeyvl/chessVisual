@@ -14,39 +14,39 @@ export const PIECES_SRC = {
 };
 
 export const PATH_LIST_COLORS = {
-  black: "black.m4a",
-  white: "white.m4a",
+  black: "./sounds/black.m4a",
+  white: "./sounds/white.m4a",
 };
 
 export const PATH_LIST_PIECES = {
-  k: "king.m4a",
-  r: "rook.m4a",
-  b: "bishop.m4a",
-  q: "queen.m4a",
-  n: "knight.m4a",
-  p: "pawn.m4a",
+  k: "./sounds/king.m4a",
+  r: "./sounds/rook.m4a",
+  b: "./sounds/bishop.m4a",
+  q: "./sounds/queen.m4a",
+  n: "./sounds/knight.m4a",
+  p: "./sounds/pawn.m4a",
 };
 
 export const PATH_LIST_LETTERS = {
-  a: "a.m4a",
-  b: "b.m4a",
-  c: "c.m4a",
-  d: "d.m4a",
-  e: "e.m4a",
-  f: "f.m4a",
-  g: "g.m4a",
-  h: "h.m4a",
+  a: "./sounds/a.m4a",
+  b: "./sounds/b.m4a",
+  c: "./sounds/c.m4a",
+  d: "./sounds/d.m4a",
+  e: "./sounds/e.m4a",
+  f: "./sounds/f.m4a",
+  g: "./sounds/g.m4a",
+  h: "./sounds/h.m4a",
 };
 
 export const PATH_LIST_NUMBERS = {
-  1: "1.m4a",
-  2: "2.m4a",
-  3: "3.m4a",
-  4: "4.m4a",
-  5: "5.m4a",
-  6: "6.m4a",
-  7: "7.m4a",
-  8: "8.m4a",
+  1: "./sounds/1.m4a",
+  2: "./sounds/2.m4a",
+  3: "./sounds/3.m4a",
+  4: "./sounds/4.m4a",
+  5: "./sounds/5.m4a",
+  6: "./sounds/6.m4a",
+  7: "./sounds/7.m4a",
+  8: "./sounds/8.m4a",
 };
 
 export const PUZZLES = [
