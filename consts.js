@@ -1,4 +1,4 @@
-export const PIECES_SRC = {
+  export const PIECES_SRC = {
   k: "./piecesPNG/bk.png",
   q: "./piecesPNG/bq.png",
   r: "./piecesPNG/br.png",

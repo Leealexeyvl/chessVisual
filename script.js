@@ -19,6 +19,21 @@ let pathAudio = [];
 let audio = new Audio();
 let soundNumber = 0;
 
+// add preload images and sounds
+Object.keys({
+  ...PIECES_SRC,
+  ...PATH_LIST_COLORS,
+  ...PATH_LIST_PIECES,
+  ...PATH_LIST_LETTERS,
+  ...PATH_LIST_NUMBERS,
+}).forEach((key) => {
+  const preloadLink = document.createElement("link");
+  preloadLink.href = PIECES_SRC[key];
+  preloadLink.rel = "preload";
+  preloadLink.as = "image";
+  document.head.appendChild(preloadLink);
+});
+
 // init every value on page
 initialAllValues();
 
